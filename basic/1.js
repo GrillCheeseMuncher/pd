@@ -21,5 +21,5 @@ const twelveClock = hours % 12 || 12;
 
 const currentTime = `${twelveClock} ${ampm} : ${fixedMinutes} : ${fixedSeconds}`; // here to do something with currentDate
 
-console.log(`Today is: ${days[currentDay - 1]}`);
-console.log(`Current time is: ${currentTime}`);
+console.log(`Today is : ${days[currentDay - 1]}.`);
+console.log(`Current time is : ${currentTime}`);
