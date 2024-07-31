@@ -6,7 +6,11 @@
 // pdf
 // jpg
 
-const getExtension = () => {};
+const getExtension = (file) => {
+  const dotSplit = file.split('.');
+
+  return dotSplit[dotSplit.length - 1];
+};
 
 console.log(getExtension('file.pdf'));
 console.log(getExtension('pic.jpg'));
