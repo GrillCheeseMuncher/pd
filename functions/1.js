@@ -6,7 +6,10 @@
 // 34223
 // 654321
 
-const rewerseNum = () => {};
+const rewerseNum = (n) => {
+  n = n + '';
+  return n.split('').reverse().join('');
+};
 
 console.log(rewerseNum(32243));
 console.log(rewerseNum(123456));

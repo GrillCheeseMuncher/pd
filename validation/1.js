@@ -6,7 +6,9 @@
 // false
 // true
 
-const isParamBoolean = () => {};
+const isParamBoolean = (input) => {
+  return Object.prototype.toString.call(input) === '[object Boolean]';
+};
 
 console.log(isParamBoolean('text'));
 console.log(isParamBoolean(true));

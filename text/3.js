@@ -4,6 +4,8 @@
 // Expected Output :
 // ["Bob", "Marley"]
 
-const string_to_array = () => {};
+const string_to_array = (input) => {
+  return input.split(' ');
+};
 
 console.log(string_to_array('Bob Marley'));

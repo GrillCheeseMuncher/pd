@@ -11,7 +11,9 @@
 // "Red+Green+White+Black"
 // "Red~Green~White~Black"
 
-const concatArr = () => {};
+const concatArr = (array, n) => {
+  return array.join(n);
+};
 
 const myColor = ['Red', 'Green', 'White', 'Black'];
 console.log(concatArr(myColor));

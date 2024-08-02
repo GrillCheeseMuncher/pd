@@ -4,6 +4,12 @@
 // "1 is odd"
 // "2 is even"
 
-const doLoop = () => {};
+const doLoop = () => {
+  for (n = 0; n <= 15; n++) {
+    if (n === 0) console.log(n + ' is even');
+    else if (n % 2 === 0) console.log(n + ' is even');
+    else console.log(n + ' is odd');
+  }
+};
 
 doLoop();

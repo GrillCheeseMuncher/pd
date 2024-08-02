@@ -7,7 +7,12 @@
 // true
 // false
 
-const is_null = () => {};
+const is_null = (input) => {
+  if (input === null) {
+    return true;
+  }
+  return false;
+};
 
 console.log(is_null(null));
 console.log(is_null('bar'));

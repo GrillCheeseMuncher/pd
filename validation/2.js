@@ -7,7 +7,9 @@
 // true
 // false
 
-const is_nan = () => {};
+const is_nan = (input) => {
+  return input !== input;
+};
 
 console.log(is_nan(NaN));
 console.log(is_nan('bar'));
