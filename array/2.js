@@ -6,7 +6,9 @@
 // [1, 2, 4, 0]
 // [1, 2, [4, 0]]
 
-const array_Clone = () => {};
+const array_Clone = (clone) => {
+  return clone.slice(0);
+};
 
 console.log(array_Clone([1, 2, 4, 0]));
 console.log(array_Clone([1, 2, [4, 0]]));

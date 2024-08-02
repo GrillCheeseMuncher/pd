@@ -6,7 +6,9 @@
 // true
 // false
 
-const is_string = () => {};
+const is_string = (input) => {
+  return Object.prototype.toString.call(input) === '[object String]';
+};
 
 console.log(is_string('Bob'));
 console.log(is_string([1, 2, 4, 0]));
