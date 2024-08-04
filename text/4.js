@@ -4,8 +4,6 @@
 // Expected Output :
 // "Bob M"
 
-const truncate_string = (string, n) => {
-  return string.substr(0, n);
-};
+const truncate_string = (string, n) => string.substr(0, n);
 
 console.log(truncate_string('Bob Marley', 5));

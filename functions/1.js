@@ -7,8 +7,8 @@
 // 654321
 
 const rewerseNum = (n) => {
-  n = n + '';
-  return n.split('').reverse().join('');
+  const x = n + '';
+  return x.split('').reverse().join('');
 };
 
 console.log(rewerseNum(32243));

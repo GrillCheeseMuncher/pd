@@ -6,12 +6,7 @@
 // false
 // true
 
-const is_array = (input) => {
-  if (Array.isArray(input)) {
-    return true;
-  }
-  return false;
-};
+const is_array = (input) => Array.isArray(input);
 
 console.log(is_array('Hakuna Matata'));
 console.log(is_array([1, 2, 4, 0]));

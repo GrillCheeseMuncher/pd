@@ -12,5 +12,7 @@ const getExtension = (file) => {
   return dotSplit[dotSplit.length - 1];
 };
 
+// const getExtension = (file) => file.split('.').pop();
+
 console.log(getExtension('file.pdf'));
 console.log(getExtension('pic.jpg'));

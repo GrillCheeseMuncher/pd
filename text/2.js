@@ -6,12 +6,7 @@
 // true
 // false
 
-const is_Blank = (string) => {
-  if (string.length === 0) {
-    return true;
-  }
-  return false;
-};
+const is_Blank = (string) => string.length === 0;
 
 console.log(is_Blank(''));
 console.log(is_Blank('abc'));

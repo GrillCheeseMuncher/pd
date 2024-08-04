@@ -6,12 +6,7 @@
 // 3
 // 3
 
-const displayLarger = (num1, num2) => {
-  if (num1 > num2) {
-    return num1;
-  }
-  return num2;
-};
+const displayLarger = (num1, num2) => (num1 > num2 ? num1 : num2);
 
 console.log(displayLarger(2, 3));
 console.log(displayLarger(3, 2));
