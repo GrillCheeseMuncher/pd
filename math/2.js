@@ -8,7 +8,7 @@
 // "2.100"
 // "2100.00"
 
-const decimals = () => {};
+const decimals = (num1, num2) => num1.toFixed(num2);
 
 console.log(decimals(2.100212, 2));
 console.log(decimals(2.100212, 3));

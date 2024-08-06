@@ -12,7 +12,7 @@
 // true
 // false
 
-const checkWithin = () => {};
+const checkWithin = (n) => n >= 20 && n <= 400;
 
 console.log(checkWithin(20));
 console.log(checkWithin(9));

@@ -10,7 +10,18 @@
 // 1
 // 0
 
-const generateRandom = () => {};
+const generateRandom = (min = 0, max = 0) => {
+  if (arguments.length === 1) {
+    max = min;
+    min = 0;
+  }
+
+  if (min > max) {
+    [min, max] = [max, min];
+  }
+
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 console.log(generateRandom(20, 1));
 console.log(generateRandom(1, 10));

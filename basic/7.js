@@ -10,7 +10,8 @@
 // Pythooon
 // Pypythooon
 
-const changeString = () => {};
+const changeString = (str) =>
+  str === null || str === undefined || str.substring(0, 2) === 'Py' ? str : 'Py' + str;
 
 console.log(changeString('Ramadan'));
 console.log(changeString());

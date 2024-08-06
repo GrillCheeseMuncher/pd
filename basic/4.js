@@ -10,7 +10,7 @@
 // true
 // false
 
-const checkNumbers = () => {};
+const checkNumbers = (a, b) => a === 50 || b === 50 || a + b == 50;
 
 console.log(checkNumbers(50, 10));
 console.log(checkNumbers(10, 50));
