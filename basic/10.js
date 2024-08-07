@@ -12,7 +12,7 @@
 // undefined
 // bbaaaaaaaaaaaaaaaaaaaaaaaaaaabb
 
-const addedLetter = (str) => (typeof str !== 'string' ? undefined : str[0] + str + str[0]);
+const addedLetter = (str) => (!str.length ? undefined : str[0] + str + str[0]);
 
 console.log(addedLetter('bob'));
 console.log(addedLetter('bo'));

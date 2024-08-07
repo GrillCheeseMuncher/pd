@@ -13,10 +13,11 @@
 // undefined
 // zurbopompowtryskiwact
 
-const rewerseLetters = (str) =>
-  typeof str !== 'string' || str.length <= 1
-    ? undefined
-    : str.slice(-1) + str.slice(1, -1) + str[0];
+const rewerseLetters = (str) => {
+  if (str?.length >= 1) {
+    return str.slice(-1) + str.slice(1, -1) + str[0];
+  }
+};
 
 console.log(rewerseLetters('Hakuna'));
 console.log(rewerseLetters('ab'));

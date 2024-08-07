@@ -8,8 +8,11 @@
 // undefined
 // obek
 
-const createNew = (str, num) =>
-  num >= str.length ? undefined : str.slice(0, num) + str.slice(num + 1);
+const createNew = (str, num) => {
+  if (num <= str.length) {
+    return str.slice(0, num) + str.slice(num + 1);
+  }
+};
 
 console.log(createNew('bobek', 3));
 console.log(createNew('bobek', 9));

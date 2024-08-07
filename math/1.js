@@ -11,11 +11,6 @@
 // 0
 
 const generateRandom = (min = 0, max = 0) => {
-  if (arguments.length === 1) {
-    max = min;
-    min = 0;
-  }
-
   if (min > max) {
     [min, max] = [max, min];
   }
