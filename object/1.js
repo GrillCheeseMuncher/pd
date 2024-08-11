@@ -12,6 +12,6 @@ const student = {
   rollno: 12,
 };
 
-const listProp = () => {};
+const listProp = (obj) => Object.keys(obj).join(', ');
 
 console.log(listProp(student));

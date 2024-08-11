@@ -16,7 +16,7 @@
 // undefined
 // object
 
-const showType = () => {};
+const showType = (input) => typeof input;
 
 console.log(showType(12));
 console.log(showType('hbcshcd'));

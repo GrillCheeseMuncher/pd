@@ -3,6 +3,6 @@
 // Expected Output : 'abeemrstw'
 // Assume punctuation and numbers symbols are not included in the passed string.
 
-const alphabeticalOrder = () => {};
+const alphabeticalOrder = (str) => str.split('').sort().join('');
 
 console.log(alphabeticalOrder('webmaster'));

@@ -2,6 +2,10 @@
 // Example string : 'the quick brown fox'
 // Expected Output : 'The Quick Brown Fox '
 
-const firstUppercase = () => {};
+const firstUppercase = (str) =>
+  str
+    .split(' ')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
 console.log(firstUppercase('the quick brown fox'));

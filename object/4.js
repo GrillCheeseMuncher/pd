@@ -8,6 +8,14 @@
 // "14:37:46"
 // "14:37:47"
 
-const clock = () => {};
+const clock = () => {
+  const currentTime = () => {
+    const clock = new Date().toLocaleTimeString('pl-Pl');
+
+    console.log(clock);
+  };
+
+  setInterval(currentTime, 1000);
+};
 
 clock();

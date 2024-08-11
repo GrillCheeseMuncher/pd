@@ -21,7 +21,14 @@
 // You have entered an invalid email address!
 // You have entered an invalid email address!
 
-const valid_email = (str) => {};
+const valid_email = (str) => {
+  regexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (regexp.test(str)) {
+    return 'Valid email address!';
+  } else {
+    return 'You have entered an invalid email address!';
+  }
+};
 
 console.log(valid_email('me-info@example.com'));
 console.log(valid_email('me-info.example.com'));
