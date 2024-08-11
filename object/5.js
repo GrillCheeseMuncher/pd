@@ -38,6 +38,6 @@ const libraryToSort = [
   },
 ];
 
-const sortThisLib = (arr) => arr.sort((a, b) => a.libraryID - b.libraryID);
+const sortThisLib = (arr) => arr.sort((b, a) => a.libraryID - b.libraryID);
 
 console.log(sortThisLib(libraryToSort));

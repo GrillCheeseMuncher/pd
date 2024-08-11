@@ -27,11 +27,9 @@ const libraryBooks = [
 const readingStatus = (obj) =>
   obj
     .map((book) => {
-      if (book.readingStatus) {
-        return `Already read '${book.title}' by ${book.author}.`;
-      } else {
-        return `You still need to read '${book.title}' by ${book.author}.`;
-      }
+      return book.readingStatus
+        ? `Already read '${book.title}' by ${book.author}.`
+        : `You still need to read '${book.title}' by ${book.author}.`;
     })
     .join('\n');
 
