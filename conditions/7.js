@@ -4,6 +4,9 @@
 // Expected output:
 // 233168
 
-const multiplyAll = () => {};
+const multiplyAll = () =>
+  Array.from({ length: 1000 }, (_, i) => i)
+    .filter((i) => i % 3 === 0 || i % 5 === 0)
+    .reduce((sum, i) => sum + i, 0);
 
 console.log(multiplyAll());

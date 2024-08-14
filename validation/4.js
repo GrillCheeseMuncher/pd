@@ -10,7 +10,7 @@
 // false
 // false
 
-const is_object = () => {};
+const is_object = (input) => typeof input === 'object' && !Array.isArray(input);
 
 console.log(is_object({ name: 'Robert' }));
 console.log(is_object([]));

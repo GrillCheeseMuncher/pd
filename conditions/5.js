@@ -13,7 +13,28 @@
 // [60 - 50] -> 2
 // [50 - 0] -> 1
 
-const findAverage = () => {};
+const findAverage = (students) => {
+  let grade;
+  if (average >= 90) {
+    grade = 6;
+  } else if (average >= 80) {
+    grade = 5;
+  } else if (average >= 70) {
+    grade = 4;
+  } else if (average >= 60) {
+    grade = 3;
+  } else if (average >= 50) {
+    grade = 2;
+  } else {
+    grade = 1;
+  }
+
+  const totalMarks = students.reduce((total, [, marks]) => total + marks, 0);
+
+  const average = totalMarks / students.length;
+
+  return `Average grade: ${average.toFixed(1)} (${grade})`;
+};
 
 const students = [
   ['David', 80],

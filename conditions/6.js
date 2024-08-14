@@ -7,6 +7,18 @@
 
 // NOTE:  every line is a new console log
 
-const createPattern = () => {};
+const createPattern = () => {
+  const lines = 5;
+
+  for (let x = 1; x <= lines; x++) {
+    let line = '';
+
+    for (let y = 1; y <= x; y++) {
+      line += '* ';
+    }
+
+    console.log(line);
+  }
+};
 
 createPattern();

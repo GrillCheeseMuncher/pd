@@ -4,6 +4,12 @@
 // Expected output:
 // Sum: 21 | Product: 720
 
-const sumAndProduct = () => {};
+const sumAndProduct = (input) => {
+  const sum = input.reduce((res, num) => res + num, 0);
+
+  const product = input.reduce((res, num) => res * num, 1);
+
+  return `Sum: ${sum} | Product: ${product}`;
+};
 
 console.log(sumAndProduct([1, 2, 3, 4, 5, 6]));
