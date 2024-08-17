@@ -18,6 +18,7 @@ const findAverage = (students) => {
 
   const average = totalMarks / students.length;
   let grade;
+
   if (average >= 90) {
     grade = 6;
   } else if (average >= 80) {

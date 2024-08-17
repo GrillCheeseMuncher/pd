@@ -2,7 +2,8 @@
 // For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'.
 
 const swapCases = (input) => {
-  return Array.from(input)
+  // return Array.from(input)
+  return [...input]
     .map((char) => (char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()))
     .join('');
 };
