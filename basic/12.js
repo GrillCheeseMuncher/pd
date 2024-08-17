@@ -11,7 +11,13 @@
 // Script
 // JavaJava
 
-const scriptCheck = () => {};
+const scriptCheck = (str) => {
+  if (str.indexOf('Script') === 4) {
+    return str.slice(0, 4) + str.slice(10);
+  } else {
+    return str;
+  }
+};
 
 console.log(scriptCheck('JavaScript'));
 console.log(scriptCheck('.JavaScript'));

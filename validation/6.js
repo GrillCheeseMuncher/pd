@@ -8,7 +8,7 @@
 // false
 // true
 
-const is_char = () => {};
+const is_char = (str) => typeof str === 'string' && str.length === 1;
 
 console.log(is_char('f'));
 console.log(is_char('fa'));

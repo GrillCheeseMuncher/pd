@@ -14,7 +14,10 @@
 // false
 // false
 
-const isUrl = () => {};
+const isUrl = (str) => {
+  regexp = /^((http|https)\:\/\/)?www\.\w+\.(com|pl)/;
+  return regexp.test(str);
+};
 
 console.log(isUrl('http://www.example.com'));
 console.log(isUrl('https://www.example.com'));

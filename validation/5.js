@@ -8,7 +8,7 @@
 // false
 // false
 
-const is_regexp = () => {};
+const is_regexp = (input) => input instanceof RegExp;
 
 console.log(is_regexp(/test/));
 console.log(is_regexp('bar'));

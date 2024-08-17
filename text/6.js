@@ -3,6 +3,15 @@
 // console.log(protect_email("robin_hood@example.com"));
 // "robin...@example.com"
 
-const protect_email = () => {};
+const protect_email = (str) => {
+  const regexp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const [name, domain] = str.split('@');
+  const protectNameValue = name.length <= 10 ? name.length / 2 : name.length / 3;
+  const protectName = name.slice(0, protectNameValue) + '...';
+
+  return regexp.test(str) ? `${protectName}@${domain}` : str;
+};
 
 console.log(protect_email('robin_hood@example.com'));
+console.log(protect_email('maciekwisniewski16@example.com'));

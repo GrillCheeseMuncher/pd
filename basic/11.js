@@ -9,7 +9,14 @@
 // true
 // false
 
-const checkRange = () => {};
+const checkRange = (num1, num2, num3) => {
+  const min = 50;
+  const max = 99;
+
+  return (
+    (num1 >= min && num1 <= max) || (num2 >= min && num2 <= max) || (num3 >= min && num3 <= max)
+  );
+};
 
 console.log(checkRange(55, 66, 77));
 console.log(checkRange(45, 66, 333));
