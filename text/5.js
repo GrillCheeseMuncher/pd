@@ -9,3 +9,4 @@ const abbrev_name = (str) => {
 };
 
 console.log(abbrev_name('Robin Hood'));
+console.log(abbrev_name('Robin Hood del Silva'));

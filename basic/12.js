@@ -12,6 +12,7 @@
 // JavaJava
 
 const scriptCheck = (str) => {
+  // const test = str.slice(4, 10) === 'Script'
   if (str.indexOf('Script') === 4) {
     return str.slice(0, 4) + str.slice(10);
   } else {

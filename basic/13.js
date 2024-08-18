@@ -15,20 +15,21 @@
 // 90
 
 const findValue = (num1, num2) => {
+  if (!num1 || !num2) return null;
+
   const num1abs = Math.abs(num1 - 100);
   const num2abs = Math.abs(num2 - 100);
 
-  return num2 === undefined
-    ? null
-    : num1abs < num2abs
-    ? num1
-    : num2abs < num1abs
-    ? num2
-    : `${num1} ${num2}`;
+  if (num1abs === num2abs) {
+    return `${num1} ${num2}`;
+  } else {
+    return num1abs < num2abs ? num1 : num2;
+  }
 };
 
 console.log(findValue(2, 50));
 console.log(findValue(2));
+console.log(findValue(undefined, 2));
 console.log(findValue(45, 143));
 console.log(findValue(99, 101));
 console.log(findValue(99, 100));
