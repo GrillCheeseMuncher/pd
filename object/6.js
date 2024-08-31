@@ -19,6 +19,28 @@
 
 const url = 'https://github.com/pubnub/python/search?utf8=%E2%9C%93&q=python';
 
-const parseUrl = () => {};
+const parseUrl = (url) => {
+  try {
+    const parsedUrl = new URL(url);
+
+    return {
+      href: parsedUrl.href,
+      origin: parsedUrl.origin,
+      protocol: parsedUrl.protocol,
+      username: parsedUrl.username,
+      password: parsedUrl.password,
+      host: parsedUrl.host,
+      hostname: parsedUrl.hostname,
+      port: parsedUrl.port,
+      pathname: parsedUrl.pathname,
+      search: parsedUrl.search,
+      searchParams: parsedUrl.searchParams,
+      hash: parsedUrl.hash,
+    };
+  } catch (error) {
+    console.error('Invalid URL:', error);
+    return null;
+  }
+};
 
 console.log(parseUrl(url));

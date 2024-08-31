@@ -10,7 +10,7 @@
 // true
 // false
 
-const is_date = () => {};
+const is_date = (input) => input instanceof Date;
 
 console.log(is_date('October 13, 2014 11:13:00'));
 console.log(is_date(new Date(86400000)));
